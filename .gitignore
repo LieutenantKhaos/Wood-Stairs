@@ -1,0 +1,4 @@
+*.bbmodel
+.DS_Store
+Thumbs.db
+mod/
