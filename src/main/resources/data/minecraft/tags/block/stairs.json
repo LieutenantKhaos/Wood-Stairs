@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "bark_stairs:oak_wood_stairs",
+    "bark_stairs:spruce_wood_stairs",
+    "bark_stairs:birch_wood_stairs",
+    "bark_stairs:jungle_wood_stairs",
+    "bark_stairs:acacia_wood_stairs",
+    "bark_stairs:dark_oak_wood_stairs",
+    "bark_stairs:mangrove_wood_stairs",
+    "bark_stairs:cherry_wood_stairs",
+    "bark_stairs:pale_oak_wood_stairs",
+    "bark_stairs:bamboo_block_stairs",
+    "bark_stairs:crimson_hyphae_stairs",
+    "bark_stairs:warped_hyphae_stairs",
+    "bark_stairs:origin_oak_wood_stairs",
+    "bark_stairs:fir_wood_stairs",
+    "bark_stairs:pine_wood_stairs",
+    "bark_stairs:maple_wood_stairs",
+    "bark_stairs:redwood_wood_stairs",
+    "bark_stairs:mahogany_wood_stairs",
+    "bark_stairs:jacaranda_wood_stairs",
+    "bark_stairs:palm_wood_stairs",
+    "bark_stairs:willow_wood_stairs",
+    "bark_stairs:dead_wood_stairs",
+    "bark_stairs:magic_wood_stairs",
+    "bark_stairs:umbran_wood_stairs",
+    "bark_stairs:hellbark_wood_stairs",
+    "bark_stairs:empyreal_wood_stairs"
+  ]
+}

@@ -1,4 +1,8 @@
+.gradle/
+build/
+run/
+.idea/
+*.iml
 *.bbmodel
 .DS_Store
 Thumbs.db
-mod/

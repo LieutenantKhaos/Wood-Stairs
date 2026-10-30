@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "biomesoplenty:redwood_planks",
+    "W": "biomesoplenty:redwood_wood"
+  },
+  "result": {
+    "id": "bark_stairs:redwood_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

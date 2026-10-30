@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "biomesoplenty:willow_planks",
+    "W": "biomesoplenty:willow_wood"
+  },
+  "result": {
+    "id": "bark_stairs:willow_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

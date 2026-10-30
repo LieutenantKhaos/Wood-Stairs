@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "minecraft:crimson_planks",
+    "W": "minecraft:crimson_hyphae"
+  },
+  "result": {
+    "id": "bark_stairs:crimson_hyphae_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

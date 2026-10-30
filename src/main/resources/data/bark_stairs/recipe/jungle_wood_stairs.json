@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "minecraft:jungle_planks",
+    "W": "minecraft:jungle_wood"
+  },
+  "result": {
+    "id": "bark_stairs:jungle_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

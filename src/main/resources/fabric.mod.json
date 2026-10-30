@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bark_stairs",
+  "version": "${version}",
+  "name": "Wood Stairs",
+  "description": "Adds wood stairs for vanilla and Biomes O Plenty wood types, with plank steps, natural bark sides, and optional built-in Alternative and Programmer Art resource packs.",
+  "authors": [
+    "LieutenantKhaos"
+  ],
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.barkstairs.BarkStairs"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "biomesoplenty": "*"
+  },
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/wood-stairs",
+    "sources": "https://github.com/LieutenantKhaos/Wood-Stairs",
+    "issues": "https://github.com/LieutenantKhaos/Wood-Stairs/issues"
+  }
+}

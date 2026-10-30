@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "biomesoplenty:fir_planks",
+    "W": "biomesoplenty:fir_wood"
+  },
+  "result": {
+    "id": "bark_stairs:fir_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

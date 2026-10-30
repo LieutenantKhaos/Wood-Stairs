@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "biomesoplenty:umbran_planks",
+    "W": "biomesoplenty:umbran_wood"
+  },
+  "result": {
+    "id": "bark_stairs:umbran_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

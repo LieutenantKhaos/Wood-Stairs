@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "biomesoplenty:origin_oak_planks",
+    "W": "biomesoplenty:origin_oak_wood"
+  },
+  "result": {
+    "id": "bark_stairs:origin_oak_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "minecraft:bamboo_planks",
+    "W": "minecraft:bamboo_block"
+  },
+  "result": {
+    "id": "bark_stairs:bamboo_block_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

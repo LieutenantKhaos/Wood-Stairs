@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "P  ",
+    "PP ",
+    "WPP"
+  ],
+  "key": {
+    "P": "minecraft:pale_oak_planks",
+    "W": "minecraft:pale_oak_wood"
+  },
+  "result": {
+    "id": "bark_stairs:pale_oak_wood_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

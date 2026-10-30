@@ -1,45 +1,73 @@
-# Wood Stairs
+# Wood Stairs — Fabric, Minecraft 26.2
 
-Wood stairs for Minecraft Java 26.2 / Fabric, with 12 vanilla and 14 Biomes O Plenty wood types. Straight, inner, and outer corners are supported.
+**Wood Stairs** adds wood stair variants with plank step surfaces and natural bark sides for every vanilla wood family, plus Biomes O' Plenty compatibility.
+
+Maintained by **LieutenantKhaos**. Internal mod ID: `bark_stairs`.
+
+## Download
+
+[Download on CurseForge](https://www.curseforge.com/minecraft/mc-mods/wood-stairs)
+| [GitHub releases](https://github.com/LieutenantKhaos/Wood-Stairs/releases)
+| [Changelog](CHANGELOG.md)
+
+| Minecraft | Mod version | Loader | Source |
+|---|---|---|---|
+| 26.3 | 1.1.0 | Fabric | [minecraft-26.3](https://github.com/LieutenantKhaos/Wood-Stairs/tree/minecraft-26.3) |
+| 26.2 | 1.0.0 | Fabric | [main](https://github.com/LieutenantKhaos/Wood-Stairs/tree/main) |
+
+## Features
+
+- 12 vanilla wood families and 14 Biomes O' Plenty wood families.
+- Straight, inner-corner, and outer-corner stair shapes.
+- Vanilla stair placement, upside-down stairs, and waterlogging.
+- Plank tops and vertical risers with bark on the exterior sides.
+- Optional built-in **Wood Stairs (Alternative)** pack for bark on the vertical risers.
+- Optional built-in **Wood Stairs (Programmer Art)** pack for classic textures.
 
 ## Install
 
-1. Install `mods/WoodStairs-Alternative-built-in.jar` in your Minecraft `mods` folder. Install only one Wood Stairs JAR at a time; the other JARs in this repository are earlier versions kept for reference.
-2. Use Minecraft 26.2, Java 25+, Fabric Loader 0.19.3+, and Fabric API. Install Biomes O Plenty to use its wood families.
-3. The default style uses plank tops and vertical risers, with bark on exterior sides.
-4. For bark risers, open **Options > Resource Packs** and enable **Wood Stairs (Alternative)**. This pack is included in the JAR; no separate download is necessary.
-5. The built-in **Wood Stairs (Programmer Art)** pack is also available. When using both, place **Alternative** above **Programmer Art**.
+This branch targets **Minecraft 26.2**, **Java 25**, **Fabric Loader 0.19.3+**, and **Fabric API 0.156.0+26.2**.
 
-The standalone `resourcepacks/WoodStairs-Bark-Risers.zip` is retained as an optional separate copy for the older plank-step JAR. It is unnecessary with the newest JAR.
+Download the mod JAR for your Minecraft version and put it in `mods`, replacing any earlier Wood Stairs JAR. Install only one version at a time. Biomes O' Plenty is optional; its wood stairs are registered only when it is installed.
 
-## Compare
+Wood Stairs adds blocks and items, so install the mod on both client and server when playing multiplayer.
 
-### Default: plank risers
+## Built-in resource packs
 
-![Default plank risers](renders/WoodStairs-all-types-labeled.png)
+Open **Options > Resource Packs** to select a style. Both packs are already included in the mod JAR; no separate ZIP is needed.
 
-### Alternative: bark risers
+- **Default:** plank tops and vertical risers; bark exterior sides.
+- **Wood Stairs (Alternative):** plank tops; bark exterior sides and vertical risers.
+- **Wood Stairs (Programmer Art):** follows Minecraft's Programmer Art textures. Enable Minecraft's Programmer Art pack too. Vanilla families only.
 
-![Alternative bark risers](renders/WoodStairs-bark-risers-labeled.png)
+If using Alternative and Programmer Art together, place **Alternative above Programmer Art**.
 
-## Files
+## Preview
 
-- `mods/`: current installable JAR and earlier iterations.
-- `WoodStairs-mod-resources.zip`: editable latest JAR contents, including both built-in packs. Extract into a `mod/` folder before using the packaging script. A `mod/` working folder is also kept locally.
-- `resourcepacks/`: standalone bark-riser pack from the earlier iteration.
-- `renders/`: labeled and unlabeled Blockbench-rendered PNGs. Blockbench project files are excluded.
-- `original/WoodStairs.zip`: original supplied compiled mod archive.
-- `tools/Package-Mod.ps1`: packages `mod/` into the current JAR using PowerShell/.NET.
-- `tools/AddBuiltinPack.java`: reproducible bytecode patch utility for the original compiled entrypoint, using ASM 9.9.1 core and tree on the classpath. Run `javac -cp "asm-9.9.1.jar;asm-tree-9.9.1.jar" AddBuiltinPack.java`, then `java -cp ".;asm-9.9.1.jar;asm-tree-9.9.1.jar" AddBuiltinPack input.class output.class`. It refuses to patch an already patched input.
+### Default
 
-The supplied archive contained compiled Java, not a Java source/Gradle project. The archived `mod/` contents are an editable resource and compiled-class distribution, not a complete source build. Original block registration code is preserved; the added initialization call registers the optional Alternative pack.
+![Wood Stairs with plank risers](docs/images/WoodStairs-all-types-labeled.png)
 
-## Validation
+### Alternative
 
-- JDK 25 class-file verification passed with Minecraft and Fabric dependencies.
-- Resource pack metadata, model JSON, and archive paths were validated.
-- Both visual styles were rendered in Blockbench using game textures.
-- The new built-in pack registration has not yet been tested by launching Minecraft.
+![Wood Stairs with bark risers](docs/images/WoodStairs-bark-risers-labeled.png)
 
-Minecraft and Biomes O Plenty textures shown in the renders belong to their respective authors. This repository does not bundle their raw texture files.
+The renders show all 26 wood families in outer / inner / straight order. Blockbench project files are not included.
 
+## Build
+
+Use Java 25 and the included Gradle wrapper:
+
+Windows: `gradlew.bat clean build`
+
+Other systems: `./gradlew clean build`
+
+Output: `build/libs/wood-stairs-1.0.0.jar`.
+
+Sources and resource definitions are under `src/main`. The Java entrypoint was recovered from the supplied compiled mod and rebuilt against Fabric; registry IDs and existing block behavior are retained.
+
+See [VALIDATION.md](VALIDATION.md) for checks and remaining in-game testing.
+
+## Credits and license
+
+Design and maintenance by LieutenantKhaos, with AI assistance for development, debugging, and documentation. The supplied mod declares **CC0-1.0**, preserved in [LICENSE](LICENSE). Minecraft and Biomes O' Plenty textures shown in the previews belong to their respective authors; their texture PNGs are not bundled with this project.

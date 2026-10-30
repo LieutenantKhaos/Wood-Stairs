@@ -1,0 +1,8 @@
+{
+  "parent": "bark_stairs:block/template_wood_stairs_straight",
+  "textures": {
+    "bottom": "biomesoplenty:block/redwood_planks",
+    "top": "biomesoplenty:block/redwood_planks",
+    "side": "biomesoplenty:block/redwood_log"
+  }
+}
