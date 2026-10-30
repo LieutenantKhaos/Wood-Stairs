@@ -1,4 +1,4 @@
-# Wood Stairs — Fabric, Minecraft 26.2
+# Wood Stairs — Fabric, Minecraft 26.3
 
 **Wood Stairs** adds wood stair variants with plank step surfaces and natural bark sides for every vanilla wood family, plus Biomes O' Plenty compatibility.
 
@@ -26,7 +26,7 @@ Maintained by **LieutenantKhaos**. Internal mod ID: `bark_stairs`.
 
 ## Install
 
-This branch targets **Minecraft 26.2**, **Java 25**, **Fabric Loader 0.19.3+**, and **Fabric API 0.156.0+26.2**.
+This branch targets **Minecraft 26.3**, **Java 25**, **Fabric Loader 0.20.1+**, and **Fabric API 0.165.0+26.3**.
 
 Download the mod JAR for your Minecraft version and put it in `mods`, replacing any earlier Wood Stairs JAR. Install only one version at a time. Biomes O' Plenty is optional; its wood stairs are registered only when it is installed.
 
@@ -62,7 +62,7 @@ Windows: `gradlew.bat clean build`
 
 Other systems: `./gradlew clean build`
 
-Output: `build/libs/wood-stairs-1.0.0.jar`.
+Output: `build/libs/wood-stairs-1.1.0.jar`.
 
 Sources and resource definitions are under `src/main`. The Java entrypoint was recovered from the supplied compiled mod and rebuilt against Fabric; registry IDs and existing block behavior are retained.
 
@@ -71,3 +71,4 @@ See [VALIDATION.md](VALIDATION.md) for checks and remaining in-game testing.
 ## Credits and license
 
 Design and maintenance by LieutenantKhaos, with AI assistance for development, debugging, and documentation. The supplied mod declares **CC0-1.0**, preserved in [LICENSE](LICENSE). Minecraft and Biomes O' Plenty textures shown in the previews belong to their respective authors; their texture PNGs are not bundled with this project.
+
